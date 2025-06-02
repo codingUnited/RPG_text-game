@@ -43,3 +43,4 @@ A work-in-progress RPG-style combat system, built as a learning project.
 
 - Idea for Barbarian Skill. **Enraged:** increase attack damage by +2 for 2 turns.
 - Will eventually need to do a balance on stats.
+# RPG_text-game
