@@ -118,30 +118,31 @@ void combatSystem(Wizard& player, Monster& npc)
             std::cout << "WARNING: You're HP is getting low" << '\n';
 
         std::cout << '>';
-        char user_input{};
+        int user_input{};
         std::cin >> user_input;
+
+        if (std::cin.fail())  // if input is a char
+        {
+            std::cin.clear();
+            std::cin.ignore();
+        }
 
         switch (user_input)
         {
-        case '1':
+        case 1:
             attackWithSpell(player, npc);
             break;
-        case '2':
+        case 2:
             healOption(player);
             break;
-        case '3':
+        case 3:
             printStats(player);
             break;
-        case '4':
+        case 4:
             printMonsterStats(npc);
             break;
-        case 'y':
-            std::cout << "Invalid input!" << '\n';
-            break;
         default:
-            std::cin.unget();
-            std::cin.clear(std::ios::failbit);                                   // goes into an infinite loop, trying to figure out why
-            std::cout << "Invalid input, try again!" << '\n';   // turned input into a char because I kept pressing y to heal instead of 2
+            std::cout << "Invalid input, try again!\n";
             break;
         }
     }
