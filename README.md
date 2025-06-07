@@ -26,7 +26,7 @@ A work-in-progress RPG-style combat system, built as a learning project.
 - Add other Classes: Barbarian, Ranger, ...
 - Add Skills for new classes.
 - Ability to **select a Spell (or Skill)** to use against a Monster
-- Additional **Stats**: Mana, Dexterity, etc.
+- Additional **Stats**: Spell/Skill slots, Dexterity, etc.
 - Choice of **which Spell(or Skill) to learn** on level-up
 - **Spell/Skills slots** system to keep weaker spells/skills viable
 - **Inventory system**
